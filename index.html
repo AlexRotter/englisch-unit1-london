@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Englisch Unit 1 – London</title>
+<meta name="description" content="Englisch-Vokabeln üben: Karteikarten, Quiz, Schreiben, Fehlerliste und Probe – offline nutzbar.">
+<meta name="theme-color" content="#c8102e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMCIgZmlsbD0iI2M4MTAyZSIvPjxyZWN0IHg9IjIyNiIgeT0iNzAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI3MCIgZmlsbD0iI2ZmZDE2NiIvPjxyZWN0IHg9IjE5NiIgeT0iMTMwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI1MCIgcng9IjEwIiBmaWxsPSIjZmZkMTY2Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjE1IiByPSI0MiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0yNTYgMjE1di0yNk0yNTYgMjE1bDE4IDEwIiBzdHJva2U9IiNjODEwMmUiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIyMjYsNzAgMjU2LDMwIDI4Niw3MCIgZmlsbD0iI2ZmZDE2NiIvPjx0ZXh0IHg9IjI1NiIgeT0iNDY1IiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlVuaXQgMTwvdGV4dD48L3N2Zz4K">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Unit 1">
+<style>
+:root{--bg:#f4f2ff;--card:#fff;--ink:#1f1b3a;--muted:#6b6789;--line:#e2def5;--acc:#5b4bdb;--acc-d:#4434b8;--ok:#1f9d55;--ok-bg:#e3f6ea;--bad:#d63b3b;--bad-bg:#fde8e8;--mid:#b7791f;--mid-bg:#fff5df;--y:#ffd166}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+#app{max-width:560px;margin:0 auto;padding:12px 16px calc(28px + env(safe-area-inset-bottom))}
+h1{font-size:1.3rem;margin:0}h2{font-size:1rem;margin:14px 0 8px}
+.hero{display:flex;gap:14px;align-items:center;padding:14px 4px 6px}.hero p{margin:2px 0 0;color:var(--muted)}
+.logo{font-size:2.2rem;background:var(--card);border-radius:18px;width:62px;height:62px;display:grid;place-items:center;box-shadow:0 2px 8px #5b4bdb22}
+.panel{background:var(--card);border-radius:18px;padding:12px 14px;margin:12px 0;box-shadow:0 1px 4px #0000000d}
+.prog{display:flex;justify-content:space-between;font-size:.9rem;margin-top:6px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:4px 0 6px}.bar i{display:block;height:100%;background:var(--ok);border-radius:6px;transition:width .4s}.bar.b2 i{background:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:7px 11px;font-size:.85rem}.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.seg{display:flex;background:var(--bg);border-radius:12px;padding:3px;gap:3px}.seg button{flex:1;border:0;background:none;padding:9px 4px;border-radius:10px;font-size:.8rem;color:var(--muted)}.seg button.on{background:#fff;color:var(--acc);font-weight:700;box-shadow:0 1px 3px #0002}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mode{position:relative;text-align:left;border:0;background:var(--card);border-radius:18px;padding:14px;box-shadow:0 1px 4px #0000000d;display:flex;flex-direction:column;gap:3px;color:var(--ink)}
+.mode .ic{font-size:1.7rem}.mode b{font-size:1rem}.mode small{color:var(--muted);font-size:.78rem;line-height:1.25}
+.mode:active,.btn:active,.opt:active{transform:scale(.98)}
+.badge{position:absolute;top:10px;right:10px;background:var(--bad);color:#fff;font-style:normal;font-weight:700;border-radius:999px;padding:2px 9px;font-size:.8rem}
+.foot,.intro{color:var(--muted);font-size:.82rem;line-height:1.4;text-align:center;margin:16px 6px}.intro{text-align:left}
+.top{display:flex;align-items:center;gap:12px;padding:6px 0 4px}.top h1{font-size:1.15rem}
+.back{border:0;background:var(--card);width:40px;height:40px;border-radius:12px;font-size:1.3rem;color:var(--muted);flex:none;box-shadow:0 1px 3px #0001}
+.sbar{flex:1;height:12px;background:var(--line);border-radius:8px;overflow:hidden}.sbar i{display:block;height:100%;background:var(--y);transition:width .3s}
+.cnt{font-weight:700;color:var(--muted);min-width:44px;text-align:right}
+.mlabel{margin:2px 0 8px;color:var(--muted);font-size:.85rem}
+.card{position:relative;background:var(--card);border-radius:20px;padding:22px 18px;box-shadow:0 2px 10px #5b4bdb14;margin:8px 0 14px;text-align:center}
+.card.center,.center{text-align:center}
+.word{font-size:1.75rem;font-weight:800;line-height:1.25;word-break:break-word}.word.en{color:var(--acc)}
+.hint{color:var(--muted);font-size:.9rem;margin:8px 0}
+.sol{font-size:1.5rem;font-weight:800;color:var(--ok);margin-top:16px;padding-top:14px;border-top:2px dashed var(--line)}
+.hidden{display:none}
+.spk{border:0;background:var(--bg);border-radius:10px;padding:4px 8px;font-size:1rem;vertical-align:middle;cursor:pointer}
+.ex{margin-top:12px;background:var(--bg);border-radius:14px;padding:10px 12px;text-align:left;font-size:.95rem;line-height:1.4}.ex .xd{color:var(--muted);font-style:italic;margin-top:2px}.tip{margin-top:6px;font-size:.88rem}
+.rep{position:absolute;top:10px;left:12px;font-size:.72rem;background:var(--mid-bg);color:var(--mid);border-radius:999px;padding:2px 8px;font-weight:700}
+.actions{display:flex;gap:10px;margin:12px 0}.actions.col{flex-direction:column}
+.btn{flex:1;border:0;border-radius:14px;padding:14px;font-size:1rem;font-weight:700;background:var(--card);color:var(--acc);box-shadow:0 1px 4px #0000001a}
+.btn.big{background:var(--acc);color:#fff;box-shadow:0 3px 0 var(--acc-d)}.btn.big:disabled{opacity:.4}
+.btn.good{background:var(--ok);color:#fff;box-shadow:0 3px 0 #157a40}.btn.bad{background:var(--bad);color:#fff;box-shadow:0 3px 0 #a82a2a}
+.btn.ghost{background:none;box-shadow:none;color:var(--muted);font-weight:500}
+.opts{display:grid;gap:10px}
+.opt{border:2px solid var(--line);background:#fff;border-radius:14px;padding:15px;font-size:1.05rem;text-align:left;color:var(--ink)}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.fb{border-radius:16px;padding:12px 14px;margin-top:12px;line-height:1.4}.fb.ok{background:var(--ok-bg)}.fb.no{background:var(--bad-bg)}.fb.almost{background:var(--mid-bg)}.fb .ex{background:#ffffffaa}
+.you{margin-top:4px;color:var(--muted)}
+.gap{font-size:1.05rem;background:var(--bg);border-radius:12px;padding:8px 10px;margin:12px 0 0}
+.tools{display:flex;gap:8px;justify-content:center;margin-top:12px}.mini{border:0;background:var(--bg);border-radius:10px;padding:8px 12px;font-size:.9rem;color:var(--ink)}
+.forms{color:var(--acc);font-weight:700;font-size:.9rem;margin:6px 0 0}
+.hn{font-family:ui-monospace,Menlo,monospace;font-size:1.05rem;letter-spacing:1px;min-height:1em;margin:8px 0 0;color:var(--acc)}
+.inp{width:100%;font-size:1.25rem;padding:14px 16px;border:2px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);outline:none;margin:4px 0}
+.inp:focus{border-color:var(--acc)}.inp.right{border-color:var(--ok);background:var(--ok-bg)}.inp.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.skip{text-align:center;color:var(--muted);font-size:.85rem}.skip a{color:var(--muted)}
+.big-emoji{font-size:3.4rem}
+.note{font-size:3.2rem;font-weight:900;width:90px;height:90px;border-radius:50%;display:grid;place-items:center;margin:0 auto 8px;color:#fff;background:var(--ok)}.note.n3,.note.n4{background:var(--mid)}.note.n5,.note.n6{background:var(--bad)}
+.sub{margin:16px 2px 8px;font-size:.95rem}
+.res{display:grid;gap:6px}.row{background:#fff;border-radius:12px;padding:9px 12px;border-left:5px solid var(--line);font-size:.95rem}.row.ok{border-color:var(--ok)}.row.no{border-color:var(--bad)}.row.half{border-color:var(--mid)}.row small{color:var(--muted)}.row .sl{color:var(--muted);font-size:.88rem}
+.legend{font-size:.78rem;color:var(--muted)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 2px 0 6px;vertical-align:middle}.dot.n{background:#d4d0e8}.dot.e{background:var(--bad)}.dot.y{background:var(--y)}.dot.g{background:var(--ok)}
+.list{background:#fff;border-radius:14px;overflow:hidden}
+.li{border-bottom:1px solid var(--line)}.li:last-child{border:0}
+.li summary{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;padding:10px 12px;list-style:none;cursor:pointer;font-size:.92rem}.li summary::-webkit-details-marker{display:none}
+.li .en{font-weight:700;color:var(--acc)}.li .de{color:var(--ink)}.li .ex{margin:0 12px 6px}.li p{margin:4px 12px 10px;font-size:.85rem;color:var(--muted)}
+@media (max-width:360px){.word{font-size:1.45rem}.modes{gap:8px}}
+:root{--bg:#fff3f3;--acc:#c8102e;--acc-d:#930b21;--line:#f1dcdc}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const APP = {title:"Englisch-Trainer", sub:"Unit 1 · London", key:"englisch-unit1-london-v1"};
+const SECTIONS = ["Intro","Zahlen bis 1000","Topic 1","Topic 2","Topic 3","Topic 4","Sights","Text"];
+// [Abschnitt, Englisch, Deutsch, Beispiel EN, Beispiel DE, Extras]
+// Extras: a = weitere englische Antworten, da = deutsche Antworten, t = Tipp, cap = Großschreibung Pflicht, f = verlangte Formen
+const RAW = [
+[1,"blog","Blog, Internettagebuch","My sister writes a blog about horses.","Meine Schwester schreibt einen Blog über Pferde."],
+[1,"so","so","The tower is so high!","Der Turm ist so hoch!"],
+[1,"sight","Sehenswürdigkeit","We saw a lot of sights in London.","Wir haben in London viele Sehenswürdigkeiten gesehen.",{t:"Mehrzahl: sights"}],
+[1,"bell","Glocke","The bell is very old.","Die Glocke ist sehr alt."],
+[1,"tower","Turm","We went up the tower.","Wir sind auf den Turm gestiegen."],
+[1,"nickname","Spitzname","My friend's nickname is Max.","Der Spitzname meines Freundes ist Max."],
+[1,"wheel","Rad, Steuerrad, Steuer","My bike has got a new wheel.","Mein Fahrrad hat ein neues Rad."],
+[1,"high","hoch, groß","The wall is very high.","Die Mauer ist sehr hoch."],
+[1,"ticket","Ticket, Eintrittskarte, Fahrschein","Two tickets for the bus, please.","Zwei Fahrscheine für den Bus, bitte.",{da:["ticket","eintrittskarte","fahrschein","fahrkarte","karte"]}],
+[1,"expensive","teuer","The tickets are very expensive.","Die Eintrittskarten sind sehr teuer.",{t:"expensive ↔ cheap"}],
+[1,"bridge","Brücke","Tower Bridge is in London.","Die Tower Bridge steht in London."],
+[1,"across","hinüber, herüber, quer durch","The children ran across the park.","Die Kinder rannten quer durch den Park."],
+[1,"top","Spitze, oberer Teil, oberes Ende","We walked to the top of the hill.","Wir sind bis zur Spitze des Hügels gelaufen."],
+[1,"theatre","Theater","We went to the theatre last Saturday.","Wir sind letzten Samstag ins Theater gegangen.",{t:"Britisch „theatre“ (-re am Ende!), amerikanisch „theater“."}],
+[1,"play","Theaterstück","The play was really funny.","Das Theaterstück war richtig lustig.",{da:["theaterstueck","stueck"]}],
+[1,"writer","Autor(in), Verfasser(in), Schriftsteller(in)","Shakespeare was a famous writer.","Shakespeare war ein berühmter Schriftsteller.",{t:"writer → to write"}],
+[1,"another","ein anderes, noch ein","Can I have another apple, please?","Kann ich bitte noch einen Apfel haben?",{da:["ein anderer","eine andere","ein anderes","noch ein","noch eine","noch einen"]}],
+[1,"It was built ...","Es wurde ... gebaut.","It was built more than 100 years ago.","Es wurde vor mehr als 100 Jahren gebaut."],
+[1,"ago","vor","I was in London two years ago.","Ich war vor zwei Jahren in London.",{t:"ago steht hinter der Zeitangabe: two years ago = vor zwei Jahren"}],
+
+[2,"one hundred and one","hunderteins (101)","The bus number is one hundred and one.","Die Busnummer ist hunderteins.",{a:["a hundred and one"],da:["hunderteins","einhunderteins","hundertundeins","101"],t:"Im britischen Englisch steht nach hundred ein „and“."}],
+[2,"one hundred and two","hundertzwei (102)","Our house number is a hundred and two.","Unsere Hausnummer ist hundertzwei.",{a:["a hundred and two"],da:["hundertzwei","einhundertzwei","102"]}],
+[2,"one hundred and ten","hundertzehn (110)","My grandma is not a hundred and ten!","Meine Oma ist nicht hundertzehn!",{a:["a hundred and ten"],da:["hundertzehn","einhundertzehn","110"]}],
+[2,"two hundred","zweihundert (200)","There are two hundred pupils at our school.","An unserer Schule sind zweihundert Schüler.",{da:["zweihundert","200"],t:"Kein -s: two hundred (nicht hundreds)"}],
+[2,"three hundred","dreihundert (300)","The tower is three hundred years old.","Der Turm ist dreihundert Jahre alt.",{da:["dreihundert","300"]}],
+[2,"four hundred and fifty-one","vierhunderteinundfünfzig (451)","The book has got four hundred and fifty-one pages.","Das Buch hat vierhunderteinundfünfzig Seiten.",{da:["vierhunderteinundfuenfzig","451"],t:"Bindestrich: fifty-one"}],
+[2,"one thousand","eintausend, tausend (1000)","A thousand people were at the concert.","Tausend Leute waren beim Konzert.",{a:["a thousand"],da:["eintausend","tausend","1000"]}],
+
+[3,"hop-on hop-off","Stadtrundfahrt im Bus (beliebig oft ein- und aussteigen)","We took a hop-on hop-off bus through London.","Wir sind mit einem Hop-on-hop-off-Bus durch London gefahren.",{da:["stadtrundfahrt","stadtrundfahrt im bus","stadtrundfahrt mit dem bus","busrundfahrt"]}],
+[3,"to get on","einsteigen","We got on the bus at the station.","Wir sind am Bahnhof in den Bus eingestiegen.",{t:"to get on ↔ to get off"}],
+[3,"monkey","Affe","The monkey is eating a banana.","Der Affe isst eine Banane."],
+[3,"driver","Fahrer, Fahrerin","The bus driver was very nice.","Der Busfahrer war sehr nett."],
+[3,"joke","Witz","My dad tells funny jokes.","Mein Papa erzählt lustige Witze."],
+[3,"to call","nennen","We call our dog Bello.","Wir nennen unseren Hund Bello.",{da:["nennen","anrufen","rufen"],t:"to call heißt auch „anrufen“."}],
+[3,"key","Schlüssel, Taste","I can't find my key!","Ich finde meinen Schlüssel nicht!"],
+[3,"next","als Nächstes","Next we went to the zoo.","Als Nächstes sind wir in den Zoo gegangen.",{da:["als naechstes","naechstes","naechste","naechster"]}],
+[3,"to stop","aufhören, anhalten","The bus stops at the station.","Der Bus hält am Bahnhof an.",{t:"stop → stopped (Doppel-p!)"}],
+[3,"circus","Zirkus","There are clowns at the circus.","Im Zirkus gibt es Clowns."],
+[3,"tent","Zelt","We slept in a tent.","Wir haben in einem Zelt geschlafen."],
+[3,"anywhere","überall, irgendwo","You can sit anywhere.","Du kannst dich überall hinsetzen.",{t:"anywhere ↔ nowhere"}],
+[3,"surprised","überrascht","I was surprised – it was my birthday party!","Ich war überrascht – es war meine Geburtstagsparty!",{t:"surprised → to surprise"}],
+[3,"elephant","Elefant","The elephant has got big ears.","Der Elefant hat große Ohren.",{t:"Achtung: ele-ph-ant mit ph"}],
+[3,"to get off","aussteigen","Get off the train here!","Steig hier aus dem Zug aus!"],
+[3,"prison","Gefängnis","The thief is in prison now.","Der Dieb ist jetzt im Gefängnis."],
+[3,"Crown Jewels","Kronjuwelen","You can see the Crown Jewels in the Tower of London.","Im Tower of London kann man die Kronjuwelen sehen.",{cap:1}],
+[3,"to take, took, taken","nehmen, mitnehmen","I took my camera to London.","Ich habe meine Kamera nach London mitgenommen.",{f:"alle 3 Formen",t:"to take the bus = mit dem Bus fahren"}],
+[3,"over","über","The plane flew over our house.","Das Flugzeug flog über unser Haus."],
+[3,"step","Schritt, Stufe","There are a lot of steps up to the tower.","Zum Turm führen viele Stufen hinauf."],
+[3,"to whisper","flüstern","Please whisper in the museum.","Bitte flüstert im Museum.",{t:"to whisper ↔ to shout"}],
+[3,"side","Seite","Look at the left side of the picture.","Schau auf die linke Seite des Bildes."],
+[3,"wrong","falsch","That answer is wrong.","Diese Antwort ist falsch.",{t:"wrong ↔ right · Achtung: stummes w"}],
+[3,"after that","danach","We had lunch. After that we went to the park.","Wir haben zu Mittag gegessen. Danach sind wir in den Park gegangen."],
+[3,"to happen","geschehen, passieren","What happened?","Was ist passiert?"],
+
+[4,"child, children","Kind, Kinder","One child, two children.","Ein Kind, zwei Kinder.",{f:"Einzahl und Mehrzahl",t:"Unregelmäßige Mehrzahl: child – children"}],
+[4,"adult","Erwachsene, Erwachsener","Adults pay more for tickets than children.","Erwachsene zahlen mehr für Eintrittskarten als Kinder.",{t:"adult ↔ child"}],
+[4,"station","Bahnhof, Haltestelle, Station","Let's meet at the station.","Treffen wir uns am Bahnhof."],
+[4,"You're welcome.","Gern geschehen.","Thank you! – You're welcome.","Danke! – Gern geschehen.",{da:["gern geschehen","gerne geschehen","keine ursache","bitte"],t:"You're = you are"}],
+[4,"Here you are.","Bitte schön.","Here you are – your ticket.","Bitte schön – deine Fahrkarte.",{da:["bitte schoen","bitte sehr","hier bitte","bitte"],t:"Sagt man, wenn man jemandem etwas gibt."}],
+[4,"change","Wechselgeld","Don't forget your change!","Vergiss dein Wechselgeld nicht!"],
+
+[5,"already","schon, bereits","I have already finished my homework.","Ich habe meine Hausaufgaben schon fertig gemacht.",{t:"already steht meist zwischen have und der 3. Form."}],
+[5,"time","Mal (z. B. three times = dreimal)","I have seen the film three times.","Ich habe den Film dreimal gesehen.",{da:["mal"],t:"time heißt auch „Zeit“ – hier aber „Mal“."}],
+[5,"just","gerade (eben), soeben","I have just seen your sister.","Ich habe gerade deine Schwester gesehen."],
+[5,"to write, wrote, written","schreiben","Have you written the letter?","Hast du den Brief geschrieben?",{f:"alle 3 Formen",t:"Achtung: written mit Doppel-t"}],
+[5,"internet","Internet","I found it on the internet.","Ich habe es im Internet gefunden."],
+[5,"to come over","herüberkommen, vorbeischauen","Can you come over after school?","Kannst du nach der Schule vorbeikommen?",{da:["herueberkommen","vorbeischauen","vorbeikommen","rueberkommen"]}],
+[5,"to do, did, done","machen, tun","I have done my homework.","Ich habe meine Hausaufgaben gemacht.",{f:"alle 3 Formen"}],
+[5,"not ... yet","noch nicht","I haven't eaten yet.","Ich habe noch nicht gegessen."],
+[5,"to finish","beenden, enden, fertigstellen, aufhören","The film finishes at nine.","Der Film endet um neun.",{t:"to finish ↔ to start"}],
+[5,"vocabulary","Vokabular, Wortschatz","I learn my vocabulary with this app.","Ich lerne meine Vokabeln mit dieser App.",{da:["vokabular","wortschatz","vokabeln"]}],
+[5,"test","Test, Klassenarbeit","We have got an English test tomorrow.","Wir schreiben morgen einen Englischtest.",{da:["test","klassenarbeit","probe","schulaufgabe","ex","stegreifaufgabe"]}],
+
+[6,"to have to","müssen","I have to go now.","Ich muss jetzt gehen.",{t:"to have to = must"}],
+[6,"soon","bald","See you soon!","Bis bald!"],
+[6,"cheap","billig","This T-shirt is very cheap.","Dieses T-Shirt ist sehr billig.",{da:["billig","guenstig"],t:"cheap ↔ expensive"}],
+[6,"market","Markt","We bought apples at the market.","Wir haben auf dem Markt Äpfel gekauft."],
+[6,"street performer","Straßenkünstler, Straßenkünstlerin","The street performer is very funny.","Der Straßenkünstler ist sehr lustig."],
+[6,"free","kostenlos, frei","The museum is free.","Das Museum ist kostenlos.",{da:["kostenlos","frei","gratis","umsonst"]}],
+[6,"ever","jemals","Have you ever seen an elephant?","Hast du jemals einen Elefanten gesehen?",{da:["jemals","je","schon einmal","schon mal"]}],
+[6,"yet","schon (in Fragen)","Have you done your homework yet?","Hast du deine Hausaufgaben schon gemacht?",{da:["schon","noch"],t:"In Fragen heißt yet „schon“, in verneinten Sätzen „noch (nicht)“."}],
+
+[7,"church","Kirche","The church has got a big bell.","Die Kirche hat eine große Glocke."],
+[7,"stadium","Stadion","We watched a football match in the stadium.","Wir haben im Stadion ein Fußballspiel angeschaut."],
+[7,"museum","Museum","The museum is closed on Mondays.","Das Museum ist montags geschlossen."],
+[7,"park","Park","Let's play football in the park.","Lass uns im Park Fußball spielen."],
+
+[8,"drama","Theater, Drama","The film is a drama.","Der Film ist ein Drama."],
+[8,"actor","Schauspieler, Schauspielerin","My favourite actor is in this film.","Mein Lieblingsschauspieler spielt in diesem Film mit."],
+[8,"to own","besitzen","My uncle owns a big boat.","Mein Onkel besitzt ein großes Boot."],
+[8,"to act","spielen","I want to act in the school play.","Ich möchte im Schultheaterstück mitspielen.",{da:["spielen","schauspielen","auftreten"],t:"to act → actor"}],
+[8,"part","Rolle, Teil","Tom plays the part of the king.","Tom spielt die Rolle des Königs."],
+[8,"landlord","Eigentümer","The landlord owns the house.","Der Eigentümer besitzt das Haus.",{da:["eigentuemer","vermieter","hausbesitzer","besitzer"]}],
+[8,"land","Land","The farmer has got a lot of land.","Der Bauer hat viel Land."],
+[8,"to take down","abbauen","After the circus, they take down the tent.","Nach dem Zirkus bauen sie das Zelt ab.",{t:"to take down ↔ to build"}],
+[8,"careful","vorsichtig, sorgfältig","Be careful – the street is busy!","Sei vorsichtig – auf der Straße ist viel Verkehr!",{t:"careful – nur ein l am Ende!"}],
+[8,"builder","Bauarbeiter, Bauarbeiterin","The builders are working on the new school.","Die Bauarbeiter arbeiten an der neuen Schule.",{t:"builder → to build"}],
+[8,"heavy","schwer, stark","My school bag is very heavy.","Meine Schultasche ist sehr schwer."],
+[8,"hard","hart, schwer, schwierig","The test was hard.","Die Probe war schwer."],
+[8,"to build, built, built","bauen","They built a new bridge last year.","Sie haben letztes Jahr eine neue Brücke gebaut.",{f:"alle 3 Formen",t:"build – built – built (u vor i!)"}],
+[8,"roof","Dach","There is a cat on the roof.","Da ist eine Katze auf dem Dach."],
+[8,"daughter","Tochter","The king has got one daughter.","Der König hat eine Tochter.",{t:"Achtung: daughter – das gh spricht man nicht."}],
+[8,"king","König","The king lives in a castle.","Der König wohnt in einem Schloss."],
+];
+/* ---------- Antworten prüfen ---------- */
+function expandParens(s){
+  const m = s.match(/\(([^()]*)\)/);
+  if(!m) return [s];
+  const pre = s.slice(0,m.index), post = s.slice(m.index+m[0].length);
+  return [...expandParens(pre+m[1]+post), ...expandParens(pre+post)];
+}
+const lev = (a,b)=>{const d=[];for(let i=0;i<=a.length;i++){d[i]=[i];for(let j=1;j<=b.length;j++)d[i][j]=i?Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1)):j;}return d[a.length][b.length];};
+function baseClean(s){
+  return s.replace(/[’‘´`]/g,"'").replace(/\.\.\.|…/g," ").replace(/\s+/g," ").trim();
+}
+const CONTR = [["i'm","i am"],["what's","what is"],["it's","it is"],["that's","that is"],["he's","he is"],["she's","she is"],["we're","we are"],["they're","they are"],["there's","there is"],["you're","you are"],["let's","let us"]];
+function normEN(s){ // locker: Bedeutung
+  s = baseClean(s).toLowerCase().replace(/[.,!?;:"„“–-]/g," ");
+  CONTR.forEach(([a,b])=>{ s = s.replace(new RegExp("(^|\\s)"+a.replace("'","'")+"(?=\\s|$)","g"),"$1"+b); });
+  s = s.replace(/\s+/g," ").trim().replace(/^to /,"");
+  return s;
+}
+function spellForm(s){ // streng: Rechtschreibung (Groß/klein separat geprüft)
+  return baseClean(s).replace(/^[\s.,!?;:]+|[\s.,!?;:]+$/g,"").replace(/\s*([.,!?])\s*/g,"$1 ").replace(/\s+/g," ").trim().replace(/^to /i,"");
+}
+function normDE(s){
+  s = baseClean(s).toLowerCase().replace(/ß/g,"ss").replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue")
+       .replace(/[.,!?;:"„“'–\-\/]/g," ").replace(/\s+/g," ").trim();
+  if(s.split(" ").length>1) s = s.replace(/^(der|die|das|ein|eine|einen) /,"");
+  return s;
+}
+function enAnswers(w){
+  const list = [];
+  [...w.en.split(" / "), ...(w.a||[])].forEach(p=>expandParens(p).forEach(v=>list.push(v)));
+  return list;
+}
+function deAnswers(w){
+  const list = [];
+  if(w.da) w.da.forEach(x=>list.push(normDE(x)));
+  w.de.split(/ \/ |, /).forEach(p=>expandParens(p).forEach(v=>list.push(normDE(v))));
+  return [...new Set(list.filter(Boolean))];
+}
+// Bedeutung Deutsch prüfen: richtig | tippfehler | falsch
+function checkDE(w, input){
+  const n = normDE(input); if(!n) return {ok:false};
+  const acc = deAnswers(w);
+  if(acc.includes(n)) return {ok:true};
+  for(const a of acc){ const tol = a.length>=14?2:(a.length>=5?1:0); if(tol && lev(a,n)<=tol) return {ok:true, typo:true, right:a}; }
+  return {ok:false};
+}
+// Englisch locker (Bedeutung)
+function checkENloose(w, input){
+  const n = normEN(input); if(!n) return {ok:false};
+  return {ok: enAnswers(w).some(a=>normEN(a)===n)};
+}
+// Kurzformen ausschreiben, Groß-/Kleinschreibung des ersten Buchstabens bleibt erhalten
+const LONG = {"i'm":"i am","what's":"what is","it's":"it is","that's":"that is","he's":"he is","she's":"she is","we're":"we are","they're":"they are","there's":"there is","you're":"you are"};
+function longForm(s){
+  return s.replace(/\b[A-Za-z]+'[a-z]+\b/g, m => { const l = LONG[m.toLowerCase()]; if(!l) return m; return m[0]===m[0].toUpperCase() ? l[0].toUpperCase()+l.slice(1) : l; });
+}
+// Englisch streng (Schreiben): ok | almost (1 Buchstabe) | case (nur Groß/klein) | wrong
+function checkSpell(w, input){
+  const inp = spellForm(input); if(!inp) return {res:"wrong"};
+  const base = enAnswers(w).map(spellForm);
+  // Langform ist auch richtig: she's -> she is, I'm -> I am (Hinweis auf Kurzform)
+  const longs = base.map(longForm).filter((l,i)=>l!==base[i]);
+  const sols = [...base, ...longs];
+  const strip = s=>s.replace(/[.,!?]/g,"").replace(/\s+/g," ").trim();
+  for(const sol of sols){
+    if(strip(sol).toLowerCase()!==strip(inp).toLowerCase()) continue;
+    // Groß/klein: Eigennamen + „I“ müssen stimmen, Satzanfang ist egal
+    const a = strip(sol), b = strip(inp);
+    let caseOk = true;
+    for(let i=0;i<a.length;i++){
+      if(a[i]===b[i]) continue;
+      const startOfI = /I/.test(a[i]) && (i===0||a[i-1]===" ") && (i+1===a.length||/[ ']/.test(a[i+1]));
+      if(i===0 && !w.cap && !startOfI) continue;
+      caseOk = false; break;
+    }
+    return {res: caseOk?"ok":"case", sol, long: longs.includes(sol) ? base[longs.indexOf(sol)] : ""};
+  }
+  // nur die Grundform geschrieben, obwohl mehrere Formen verlangt sind (take statt take, took, taken)
+  if(w.f){ const firstForm = strip(base[0].split(",")[0]).toLowerCase(); if(strip(inp).toLowerCase()===firstForm) return {res:"forms", sol:base[0]}; }
+  let best = null, bd = 99;
+  for(const sol of sols){ const d = lev(strip(sol).toLowerCase(), strip(inp).toLowerCase()); if(d<bd){bd=d;best=sol;} }
+  if(bd===1 && strip(best).length>=3) return {res:"almost", sol:best};
+  return {res:"wrong", sol:sols[0]};
+}
+/* ---------- Daten & Lernstand ---------- */
+const W = RAW.map((r,i)=>Object.assign({id:i,sec:r[0],en:r[1],de:r[2],xe:r[3],xd:r[4]},r[5]||{}));
+const LS_KEY = APP.key;
+let DB = {st:{}, secs:SECTIONS.map((_,i)=>i+1), dir:"mix"};
+try{ const s = JSON.parse(localStorage.getItem(LS_KEY)||"null"); if(s&&s.st) DB = Object.assign(DB,s); }catch(e){}
+function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }catch(e){} }
+const st = id => DB.st[id] || (DB.st[id] = {m:0,s:0,em:0,es:0,ems:0,ess:0});
+function rec(id, kind, ok){ // kind: "m" Bedeutung, "s" Schreiben
+  const s = st(id), E = "e"+kind, S = "e"+kind+"s";
+  if(ok){ s[kind] = s[kind]===0 ? 2 : Math.min(5, s[kind]+1); if(s[E]){ s[S]++; if(s[S]>=2){ s[E]=0; s[S]=0; } } }
+  else { s[kind] = 1; s[E] = 1; s[S] = 0; }
+  save();
+}
+const sure = (id,kind) => { const s = DB.st[id]; return !!s && s[kind]>=3 && !s["e"+kind]; };
+const errIds = kind => W.filter(w=>DB.st[w.id] && DB.st[w.id]["e"+kind]).map(w=>w.id);
+const pool = () => W.filter(w=>DB.secs.includes(w.sec));
+
+/* ---------- Auswahl: Fehler und neue Wörter kommen öfter dran ---------- */
+function weight(id, kind){ const s = DB.st[id]; if(!s) return 6; if(s["e"+kind]) return 12; return [6,12,5,3,1.5,0.7][s[kind]]; }
+function pickWeighted(ids, n, kind){
+  const left = ids.slice(), out = [];
+  while(out.length<n && left.length){
+    const tot = left.reduce((a,id)=>a+weight(id,kind),0); let r = Math.random()*tot, k = 0;
+    for(;k<left.length;k++){ r -= weight(left[k],kind); if(r<=0) break; }
+    out.push(left.splice(Math.min(k,left.length-1),1)[0]);
+  }
+  return out;
+}
+const shuffle = a => { for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- Vorlesen (britisches Englisch) ---------- */
+let VOICE = null;
+function loadVoice(){ try{ const v = speechSynthesis.getVoices(); VOICE = v.find(x=>/en[-_]GB/i.test(x.lang)) || v.find(x=>/^en/i.test(x.lang)) || null; }catch(e){} }
+try{ loadVoice(); speechSynthesis.onvoiceschanged = loadVoice; }catch(e){}
+function say(t){
+  try{ speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t.replace(/\.\.\.|…/g,"").replace(/ \/ /g,". "));
+    u.lang = "en-GB"; if(VOICE) u.voice = VOICE; u.rate = .85; speechSynthesis.speak(u); }catch(e){}
+}
+const spk = t => `<button class="spk" data-say="${esc(t)}" aria-label="Vorlesen">🔊</button>`;
+document.addEventListener("click", e=>{ const b = e.target.closest("[data-say]"); if(b){ e.preventDefault(); e.stopPropagation(); say(b.dataset.say); } }, true);
+
+/* ---------- Ansichten ---------- */
+const $app = document.getElementById("app");
+let S = null; // laufende Runde
+
+function header(title, back=true){
+  return `<header class="top">${back?`<button class="back" onclick="home()">‹</button>`:""}<h1>${title}</h1></header>`;
+}
+function bar(n, total, cls=""){ const p = total? Math.round(100*n/total):0; return `<div class="bar ${cls}"><i style="width:${p}%"></i></div>`; }
+
+function home(){
+  S = null;
+  const P = pool(), nm = P.filter(w=>sure(w.id,"m")).length, ns = P.filter(w=>sure(w.id,"s")).length;
+  const em = errIds("m").length, es = errIds("s").length;
+  $app.innerHTML = `
+  <header class="hero"><div class="logo">🇬🇧</div><div><h1>${esc(APP.title)}</h1><p>${APP.sub?esc(APP.sub)+" · ":""}${P.length} Vokabeln ausgewählt</p></div></header>
+  <section class="panel">
+    <div class="prog"><span>Bedeutung sicher</span><b>${nm}/${P.length}</b></div>${bar(nm,P.length)}
+    <div class="prog"><span>Schreiben sicher</span><b>${ns}/${P.length}</b></div>${bar(ns,P.length,"b2")}
+  </section>
+  <section class="panel">
+    <h2>Welche Seiten?</h2>
+    <div class="chips">
+      <button class="chip ${DB.secs.length===SECTIONS.length?"on":""}" onclick="setAll()">Alle</button>
+      ${SECTIONS.map((s,i)=>`<button class="chip ${DB.secs.includes(i+1)?"on":""}" onclick="togSec(${i+1})">${i+1} · ${esc(s)}</button>`).join("")}
+    </div>
+    <h2>Richtung</h2>
+    <div class="seg">
+      ${[["en2de","Englisch → Deutsch"],["de2en","Deutsch → Englisch"],["mix","Gemischt"]].map(([k,l])=>`<button class="${DB.dir===k?"on":""}" onclick="setDir('${k}')">${l}</button>`).join("")}
+    </div>
+  </section>
+  <div class="modes">
+    <button class="mode" onclick="start('flash')"><span class="ic">🃏</span><b>Karteikarten</b><small>Wort ansehen, umdrehen, ehrlich bewerten</small></button>
+    <button class="mode" onclick="start('quiz')"><span class="ic">✅</span><b>Quiz</b><small>Die richtige Übersetzung antippen</small></button>
+    <button class="mode" onclick="start('spell')"><span class="ic">✍️</span><b>Schreiben</b><small>Englische Wörter richtig schreiben</small></button>
+    <button class="mode err" onclick="errorsView()"><span class="ic">🔁</span><b>Fehler üben</b><small>${em+es? `${em} Bedeutung · ${es} Schreiben`:"Gerade keine Fehler 🎉"}</small>${em+es?`<em class="badge">${em+es}</em>`:""}</button>
+    <button class="mode" onclick="start('probe')"><span class="ic">📝</span><b>Probe</b><small>20 Fragen mit Note – wie in der Schule</small></button>
+    <button class="mode" onclick="listView()"><span class="ic">📚</span><b>Wortliste</b><small>Alle Wörter mit Beispielsätzen</small></button>
+  </div>
+  <p class="foot">Nicht gewusste Wörter kommen öfter dran. Ein Fehlerwort verlässt die Fehlerliste, wenn es zweimal hintereinander richtig war.</p>`;
+}
+function setAll(){ DB.secs = DB.secs.length===SECTIONS.length ? [] : SECTIONS.map((_,i)=>i+1); if(!DB.secs.length) DB.secs=[1]; save(); home(); }
+function togSec(n){ const i = DB.secs.indexOf(n); if(i>=0){ if(DB.secs.length>1) DB.secs.splice(i,1); } else DB.secs.push(n); save(); home(); }
+function setDir(d){ DB.dir = d; save(); home(); }
+
+/* ---------- Runde starten ---------- */
+const ROUND = 15;
+function dirFor(type){ if(type==="spell") return "de2en"; return DB.dir==="mix" ? (Math.random()<.5?"en2de":"de2en") : DB.dir; }
+function start(type, ids, label){
+  let q;
+  if(type==="probe"){
+    const P = shuffle(pool().map(w=>w.id)).slice(0,20);
+    q = P.map((id,i)=>({id, dir: i<Math.ceil(P.length/2) ? "de2en" : "en2de"}));
+    shuffle(q);
+  } else {
+    const kind = type==="spell" ? "s" : "m";
+    const src = ids || pool().map(w=>w.id);
+    const chosen = ids ? shuffle(src.slice()).slice(0,25) : pickWeighted(src, ROUND, kind);
+    q = chosen.map(id=>({id, dir: dirFor(type)}));
+  }
+  if(!q.length){ home(); return; }
+  S = {type, q, i:0, res:[], again:{}, streak:0, label: label || {flash:"Karteikarten",quiz:"Quiz",spell:"Schreiben",probe:"Probe"}[type]};
+  show();
+}
+function sessHead(){
+  const n = S.q.length, p = Math.round(100*S.i/n);
+  return `<header class="top"><button class="back" onclick="if(confirm('Runde abbrechen?'))home()">✕</button>
+    <div class="sbar"><i style="width:${p}%"></i></div><span class="cnt">${S.type==="probe"?`${S.i+1}/${n}`:(S.streak>=3?`🔥 ${S.streak}`:`${S.i+1}/${n}`)}</span></header>
+    <p class="mlabel">${esc(S.label)}</p>`;
+}
+function show(){
+  if(S.i>=S.q.length) return summary();
+  const it = S.q[S.i], w = W[it.id];
+  ({flash:showFlash, quiz:showQuiz, spell:showSpell, probe:showProbe})[S.type](w, it);
+}
+function next(){ S.i++; show(); }
+function answer(it, ok, extra){
+  const kind = S.type==="spell" ? "s" : "m";
+  rec(it.id, kind, ok);
+  S.res.push(Object.assign({id:it.id, dir:it.dir, ok}, extra||{}));
+  S.streak = ok ? S.streak+1 : 0;
+  // falsch -> kommt in dieser Runde nach 3 Karten nochmal
+  if(!ok && (S.again[it.id]||0) < 2){ S.again[it.id] = (S.again[it.id]||0)+1; S.q.splice(Math.min(S.i+4, S.q.length), 0, {id:it.id, dir:it.dir, repeat:true}); }
+}
+const forms = w => w.f ? `<p class="forms">✏️ ${esc(w.f)}</p>` : "";
+const prompt = (w,dir) => dir==="en2de" ? `<div class="word en">${esc(w.en)} ${spk(w.en)}</div><p class="hint">Was heißt das auf Deutsch?</p>`
+                                         : `<div class="word">${esc(w.de)}</div>${forms(w)}<p class="hint">Was heißt das auf Englisch?</p>`;
+const example = w => `<div class="ex"><div>${esc(w.xe)} ${spk(w.xe)}</div><div class="xd">${esc(w.xd)}</div>${w.t?`<div class="tip">💡 ${esc(w.t)}</div>`:""}</div>`;
+const pill = it => it.repeat ? `<span class="rep">nochmal</span>` : "";
+
+/* Karteikarten */
+function showFlash(w, it){
+  $app.innerHTML = sessHead() + `<div class="card">${pill(it)}${prompt(w,it.dir)}
+    <div id="back" class="hidden"><div class="sol">${it.dir==="en2de"?esc(w.de):`${esc(w.en)} ${spk(w.en)}`}</div>${example(w)}</div></div>
+    <div class="actions" id="act"><button class="btn big" onclick="flip()">Umdrehen</button></div>`;
+  window.flip = () => {
+    document.getElementById("back").classList.remove("hidden");
+    if(it.dir==="de2en") say(w.en);
+    document.getElementById("act").innerHTML = `<button class="btn bad" onclick="fl(false)">😕 Nicht gewusst</button><button class="btn good" onclick="fl(true)">😊 Gewusst</button>`;
+  };
+  window.fl = ok => { answer(it, ok); next(); };
+}
+
+/* Quiz */
+function options(w, dir){
+  const key = dir==="en2de" ? "de" : "en", multi = x => /\s/.test(x.en.replace(/^to /,"")) ;
+  const wDE = deAnswers(w), wEN = enAnswers(w).map(normEN);
+  const clash = x => dir==="de2en" ? deAnswers(x).some(a=>wDE.includes(a)) : enAnswers(x).map(normEN).some(a=>wEN.includes(a));
+  const same = W.filter(x=>x.id!==w.id && multi(x)===multi(w) && x[key]!==w[key] && !clash(x));
+  const near = shuffle(same.filter(x=>x.sec===w.sec)), far = shuffle(same.filter(x=>x.sec!==w.sec));
+  const opts = [w]; for(const x of [...near.slice(0,2), ...far]){ if(opts.length>=4) break; if(!opts.some(o=>o[key]===x[key])) opts.push(x); }
+  return shuffle(opts).map(o=>({id:o.id, text:o[key]}));
+}
+function showQuiz(w, it){
+  const opts = options(w, it.dir);
+  $app.innerHTML = sessHead() + `<div class="card">${pill(it)}${prompt(w,it.dir).replace(/<p class="hint">.*<\/p>/,'<p class="hint">Tippe die richtige Übersetzung an.</p>')}</div>
+    <div class="opts">${opts.map(o=>`<button class="opt" data-id="${o.id}">${esc(o.text)}</button>`).join("")}</div><div id="fb"></div>`;
+  $app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+    const ok = +b.dataset.id===w.id;
+    $app.querySelectorAll(".opt").forEach(x=>{ x.disabled=true; if(+x.dataset.id===w.id) x.classList.add("right"); });
+    if(!ok) b.classList.add("wrong");
+    answer(it, ok);
+    if(it.dir==="de2en" || ok) say(w.en);
+    document.getElementById("fb").innerHTML = `<div class="fb ${ok?"ok":"no"}"><b>${ok?"Richtig! 🎉":"Leider falsch."}</b> ${ok?"":`Richtig ist: <b>${esc(it.dir==="en2de"?w.de:w.en)}</b>`}${example(w)}</div>
+      <div class="actions"><button class="btn big" id="nx">Weiter</button></div>`;
+    document.getElementById("nx").onclick = next; document.getElementById("nx").focus();
+  });
+}
+
+/* Schreiben */
+function gapSentence(w){
+  const t = expandParens(w.en.split(" / ")[0]).pop().replace(/^to /,"").replace(/[.!?]|\.\.\.|…/g,"").trim();
+  if(!t || t.split(" ").length>2) return "";
+  const re = new RegExp("\\b"+t.replace(/[-']/g,m=>"\\"+m)+"[a-z]*","i");
+  if(!re.test(w.xe)) return "";
+  const g = w.xe.replace(re,"_____");
+  return g.replace(/_____|[^a-z]/gi,"").length>=6 ? g : "";
+}
+function inputBox(id, ph){ return `<input id="${id}" class="inp" type="text" placeholder="${ph}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done">`; }
+function showSpell(w, it){
+  const g = gapSentence(w); let hinted = false;
+  $app.innerHTML = sessHead() + `<div class="card">${pill(it)}<p class="hint">Schreib auf Englisch:</p><div class="word">${esc(w.de)}</div>${forms(w)}
+     ${g?`<p class="gap">${esc(g)}</p>`:""}
+     <div class="tools"><button class="mini" data-say="${esc(w.en)}">🔊 Anhören</button><button class="mini" id="hb">💡 Tipp</button></div><p id="hn" class="hn"></p></div>
+     ${inputBox("in","Englisch eintippen …")}
+     <div class="actions"><button class="btn big" id="ck">Prüfen</button></div><div id="fb"></div>`;
+  const inp = document.getElementById("in"); inp.focus();
+  document.getElementById("hb").onclick = () => { hinted = true; const sol = spellForm(enAnswers(w)[0]);
+    document.getElementById("hn").textContent = sol.split("").map((c,i)=>i===0||c===" "||c==="'"||c==="-"||c===","?c:"_").join(" ") + `  (${sol.replace(/[ '\-.,!?]/g,"").length} Buchstaben)`; };
+  const check = () => {
+    if(!inp.value.trim()) return;
+    const r = checkSpell(w, inp.value), ok = r.res==="ok";
+    inp.disabled = true; inp.classList.add(ok?"right":"wrong");
+    if(ok && hinted){ S.res.push({id:it.id, dir:it.dir, ok:true, hint:true}); S.streak++; } else answer(it, ok, {given:inp.value});
+    const kurz = ok && r.long ? `<div class="you">Auch richtig ist die Kurzform: <b>${esc(r.long)}</b></div>` : "";
+    const msg = ok ? (hinted?"Richtig – mit Tipp. 👍":"Richtig geschrieben! 🎉") + kurz
+      : r.res==="case" ? `Fast! Achte auf die <b>Großschreibung</b>: <b>${esc(r.sol)}</b>`
+      : r.res==="almost" ? `Fast! Nur ein Buchstabe falsch. Richtig: <b>${esc(r.sol)}</b>`
+      : r.res==="forms" ? `Fast! Es fehlen die anderen Formen. Richtig: <b>${esc(r.sol)}</b>`
+      : `Leider falsch. Richtig: <b>${esc(spellForm(enAnswers(w)[0]))}</b>`;
+    say(w.en);
+    document.getElementById("ck").parentNode.remove();
+    document.getElementById("fb").innerHTML = `<div class="fb ${ok?"ok":(r.res==="wrong"?"no":"almost")}">${msg}${ok?"":`<div class="you">Du: <s>${esc(inp.value)}</s></div>`}${example(w)}</div>
+      ${ok?`<div class="actions"><button class="btn big" id="nx">Weiter</button></div>`
+          :`<p class="hint">Schreib es einmal richtig ab:</p>${inputBox("cp","richtig abschreiben …")}<div class="actions"><button class="btn big" id="nx" disabled>Weiter</button></div><p class="skip"><a href="#" id="sk">überspringen</a></p>`}`;
+    const nx = document.getElementById("nx"); nx.onclick = next;
+    if(ok){ nx.focus(); return; }
+    const cp = document.getElementById("cp"); cp.focus();
+    cp.oninput = () => { const good = checkSpell(w, cp.value).res==="ok"; nx.disabled = !good; cp.classList.toggle("right", good); };
+    cp.onkeydown = e => { if(e.key==="Enter"){ e.preventDefault(); if(!nx.disabled) next(); } };
+    document.getElementById("sk").onclick = e => { e.preventDefault(); next(); };
+  };
+  document.getElementById("ck").onclick = check;
+  inp.onkeydown = e => { if(e.key==="Enter"){ e.preventDefault(); check(); } };
+}
+
+/* Probe */
+function showProbe(w, it){
+  $app.innerHTML = sessHead() + `<div class="card">${it.dir==="en2de" ? `<div class="word en">${esc(w.en)}</div><p class="hint">Schreib auf Deutsch:</p>` : `<div class="word">${esc(w.de)}</div>${forms(w)}<p class="hint">Schreib auf Englisch:</p>`}</div>
+    ${inputBox("in", it.dir==="en2de"?"Deutsch eintippen …":"Englisch eintippen …")}
+    <div class="actions"><button class="btn big" id="ck">Weiter</button></div><p class="skip">Keine Rückmeldung während der Probe – die Auswertung kommt am Ende.</p>`;
+  const inp = document.getElementById("in"); inp.focus();
+  const go = () => {
+    const v = inp.value; let pts = 0, note = "";
+    if(it.dir==="de2en"){ const r = checkSpell(w, v); pts = r.res==="ok"?1:(r.res==="almost"||r.res==="case"||r.res==="forms")?.5:0; note = r.res;
+      rec(w.id,"s",pts===1); rec(w.id,"m",pts>0 || checkENloose(w,v).ok); }
+    else { const r = checkDE(w, v); pts = r.ok?1:0; note = r.typo?"typo":""; rec(w.id,"m",r.ok); }
+    S.res.push({id:w.id, dir:it.dir, ok:pts===1, pts, given:v, note}); next();
+  };
+  document.getElementById("ck").onclick = go; inp.onkeydown = e => { if(e.key==="Enter"){ e.preventDefault(); go(); } };
+}
+function grade(p){ return p>=.92?1:p>=.81?2:p>=.67?3:p>=.5?4:p>=.3?5:6; }
+
+/* ---------- Auswertung ---------- */
+function summary(){
+  const first = {}; S.res.forEach(r=>{ if(!(r.id in first)) first[r.id] = r; });
+  const R = Object.values(first), n = R.length;
+  if(S.type==="probe"){
+    const pts = S.res.reduce((a,r)=>a+r.pts,0), p = pts/n, g = grade(p);
+    const wrong = S.res.filter(r=>r.pts<1).map(r=>r.id);
+    $app.innerHTML = header("Probe – Ergebnis") + `<div class="card center"><div class="note n${g}">${g}</div><p><b>${String(pts).replace(".",",")} von ${n} Punkten</b> (${Math.round(p*100)} %)</p><p class="hint">ungefähre Note · halbe Punkte bei Groß-/Kleinschreibung, einem falschen Buchstaben oder fehlenden Verbformen</p></div>
+      <div class="res">${S.res.map(r=>{ const w = W[r.id], sol = r.dir==="en2de"?w.de:w.en, q = r.dir==="en2de"?w.en:w.de;
+        return `<div class="row ${r.pts===1?"ok":r.pts?"half":"no"}"><div><small>${esc(q)}</small><div>${r.pts===1?"✔":r.pts?"½":"✘"} ${esc(r.given||"–")}${r.note==="typo"?' <small>(kleiner Tippfehler)</small>':""}</div>${r.pts<1?`<div class="sl">richtig: <b>${esc(sol)}</b></div>`:""}</div></div>`; }).join("")}</div>
+      <div class="actions col">${wrong.length?`<button class="btn big" onclick="start('spell',[${wrong}],'Probe-Fehler schreiben')">Fehler jetzt üben (${wrong.length})</button>`:""}<button class="btn" onclick="start('probe')">Neue Probe</button><button class="btn ghost" onclick="home()">Startseite</button></div>`;
+    return;
+  }
+  const ok = R.filter(r=>r.ok).length, wrong = R.filter(r=>!r.ok).map(r=>r.id), p = n? ok/n : 0;
+  const face = p===1?"🏆":p>=.8?"🌟":p>=.5?"💪":"🌱";
+  $app.innerHTML = header("Runde geschafft!") + `<div class="card center"><div class="big-emoji">${face}</div><p><b>${ok} von ${n}</b> beim ersten Versuch richtig</p>${bar(ok,n)}</div>
+    ${wrong.length?`<h2 class="sub">Das übst du nochmal:</h2><div class="res">${wrong.map(id=>{ const w=W[id]; return `<div class="row no"><div><b>${esc(w.en)}</b> ${spk(w.en)}<div class="sl">${esc(w.de)}</div></div></div>`; }).join("")}</div>`:`<p class="center">Alles gewusst – super! 🎉</p>`}
+    <div class="actions col">${wrong.length?`<button class="btn big" onclick="start('${S.type}',[${wrong}],'Nur die Fehler')">Nur die Fehler nochmal (${wrong.length})</button>`:""}
+    <button class="btn" onclick="start('${S.type}')">Neue Runde</button><button class="btn ghost" onclick="home()">Startseite</button></div>`;
+}
+
+/* ---------- Fehler üben ---------- */
+function errorsView(){
+  const em = errIds("m"), es = errIds("s");
+  const rows = ids => ids.map(id=>{ const w=W[id]; return `<div class="row no"><div><b>${esc(w.en)}</b> ${spk(w.en)}<div class="sl">${esc(w.de)}</div></div></div>`; }).join("");
+  $app.innerHTML = header("Fehler üben") + `<p class="intro">Hier sammeln sich alle Wörter, die du nicht gewusst hast – egal von welcher Seite. Ein Wort verschwindet, wenn du es <b>zweimal hintereinander</b> richtig hast.</p>
+   <section class="panel"><h2>Bedeutung nicht gewusst (${em.length})</h2>
+     ${em.length?`<div class="actions"><button class="btn" onclick="start('flash',[${em}],'Fehler · Karteikarten')">🃏 Karteikarten</button><button class="btn" onclick="start('quiz',[${em}],'Fehler · Quiz')">✅ Quiz</button></div><div class="res">${rows(em)}</div>`:`<p class="hint">Keine – super! 🎉</p>`}</section>
+   <section class="panel"><h2>Falsch geschrieben (${es.length})</h2>
+     ${es.length?`<div class="actions"><button class="btn" onclick="start('spell',[${es}],'Fehler · Schreiben')">✍️ Schreiben üben</button></div><div class="res">${rows(es)}</div>`:`<p class="hint">Keine – super! 🎉</p>`}</section>`;
+}
+
+/* ---------- Wortliste ---------- */
+function dot(id,kind){ const s = DB.st[id]; const c = !s||!s[kind]?"n":s["e"+kind]?"e":s[kind]>=3?"g":"y"; return `<i class="dot ${c}"></i>`; }
+function listView(q=""){
+  const qq = q.toLowerCase();
+  const items = W.filter(w=>!qq || (w.en+" "+w.de).toLowerCase().includes(qq));
+  $app.innerHTML = header("Wortliste") + `<input class="inp" id="q" placeholder="Suchen …" value="${esc(q)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <p class="legend"><i class="dot n"></i>neu <i class="dot e"></i>Fehler <i class="dot y"></i>lernt <i class="dot g"></i>sicher · links Bedeutung, rechts Schreiben</p>
+    ${SECTIONS.map((s,i)=>{ const L = items.filter(w=>w.sec===i+1); if(!L.length) return "";
+      return `<h2 class="sub">Seite ${i+1} · ${esc(s)}</h2><div class="list">${L.map(w=>`<details class="li"><summary><span class="en">${esc(w.en)}</span><span class="de">${esc(w.de)}</span><span class="ds">${dot(w.id,"m")}${dot(w.id,"s")}</span></summary>${example(w)}<p>${spk(w.en)} Wort anhören</p></details>`).join("")}</div>`; }).join("")}
+    <div class="actions col"><button class="btn ghost" onclick="resetAll()">Lernstand zurücksetzen</button></div>`;
+  const qi = document.getElementById("q"); qi.oninput = () => { const v = qi.value, pos = qi.selectionStart; listView(v); const n = document.getElementById("q"); n.focus(); n.setSelectionRange(pos,pos); };
+}
+function resetAll(){ if(confirm("Wirklich den ganzen Lernstand löschen? Alle Fehlerlisten und Fortschritte gehen verloren.")){ DB.st = {}; save(); home(); } }
+
+home();
+if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>

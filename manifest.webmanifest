@@ -1,0 +1,16 @@
+{
+  "name": "Englisch Unit 1 – Welcome to London",
+  "short_name": "Unit 1",
+  "description": "Englisch-Vokabeln Unit 1 üben: Karteikarten, Quiz, Schreiben, Fehlerliste und Probe – offline.",
+  "lang": "de",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff3f3",
+  "theme_color": "#c8102e",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "apple-touch-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
